@@ -1,0 +1,27 @@
+# Spacewar! AI Dependencies
+
+# Core
+pygame>=2.5.0
+gymnasium>=0.29.0
+numpy>=1.24.0
+
+# Deep Learning
+torch>=2.0.0
+
+# Logging and monitoring
+tensorboard>=2.14.0
+
+# System utilities
+psutil>=5.9.0
+
+# LLM APIs (optional - install as needed)
+openai>=1.0.0
+anthropic>=0.7.0
+requests>=2.31.0
+
+# Local LLM (optional - install if using --llm-local)
+# For basic CPU: pip install llama-cpp-python huggingface_hub
+# For NVIDIA CUDA: CMAKE_ARGS="-DLLAMA_CUDA=on" pip install llama-cpp-python
+# For AMD ROCm: CMAKE_ARGS="-DLLAMA_HIPBLAS=on" pip install llama-cpp-python
+huggingface_hub>=0.19.0
+llama-cpp-python>=0.2.0
